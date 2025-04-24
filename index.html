@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="game.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h3 id="js-scores"></h3>
+
+    <p>Alternative to using the buttons you can also press <strong>R</strong> to choose <strong>Rock</strong>, <strong>P</strong> to choose <strong>Paper,</strong><br> or <strong>S</strong> to choose <strong>Scissors</strong> on the keyboard, and <strong>Backspace</strong> to <strong>reset the score.</strong></br></p>
+
+    <p>You can also press <strong>Auto Play</strong> button or the <strong>Spacebar</strong> on your keyboard to automatically play and <br>stop the game.</br></p>
+
+    <div>
+      <button id="js-rock-btn" class="btn" onclick="playGame('Rock')">Rock</button>
+      <button id="js-paper-btn" class="btn" onclick="playGame('Paper')">Paper</button>
+      <button id="js-scissors-btn" class="btn" onclick="playGame('Scissors')">Scissors</button>
+      <button class="btn" onclick="resetScore()">Reset Score</button>
+    </div>
+    
+    <button id="js-auto-play-btn" class="btn" onclick="autoPlay()">Auto Play</button>
+
+    <p id="js-results"></p>
+    <script src="game.js"></script>
+  </body>
+</html>
